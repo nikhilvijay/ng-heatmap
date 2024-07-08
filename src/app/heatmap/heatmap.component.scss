@@ -1,0 +1,32 @@
+/* heatmap.component.css */
+.heatmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    background-color: #ccc; /* Default background color */
+    cursor: pointer;
+
+    &:not([title=""]) {
+        background-color: red;
+    }
+}
+
+.first-column {
+    width: 30px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    background-color: #ffffff !important; /* Custom background color for the first column */
+    cursor: pointer;
+}

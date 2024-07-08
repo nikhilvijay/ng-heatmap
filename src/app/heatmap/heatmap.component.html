@@ -1,0 +1,8 @@
+<div class="heatmap">
+    <!-- 7 rows -->
+    <div class="row" *ngFor="let row of rows; let i = index">
+        <!-- 53 columns -->
+        <div class="column first-column">{{days[i]}}</div>
+        <div class="column" *ngFor="let col of cols; let j = index" [title]="getDates(2024,days[i],j)" [ngStyle]="{opacity:getIntensity(getDates(2024,days[i],j))}"></div>
+    </div>
+</div>

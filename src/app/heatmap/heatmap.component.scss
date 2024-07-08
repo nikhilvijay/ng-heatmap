@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border:1px solid #fff;
+    padding:10px;
+    display: inline-block;
 }
 
 .row {
@@ -27,6 +30,7 @@
     padding: 0;
     margin: 0;
     font-size: small;
-    background-color: #ffffff !important; /* Custom background color for the first column */
+    color: #fff;
+    background-color: transparent !important; /* Custom background color for the first column */
     cursor: pointer;
 }
